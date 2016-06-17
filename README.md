@@ -11,6 +11,6 @@ Clients run in separate threads. Transaction rate for this component is about 10
 
 Examples:
 
-Client A purchased two items, for 2$ and 26$ respectively. This transactions were recorded using PUT(A, 2.0); PUT (A, 26.0). GET(A) will return 14.0.
+Client `A` purchased two items, for `$2` and `$26` respectively. This transactions were recorded using `put(A, 2.0)`; `put(A, 26.0)`. `get(A)` will return `14.0`.
 
-Client B is a large company that makes hundreds of purchases per day. Values range from 0.01$ to 1000s of $. GET(B) will return average based on N last purchases.
+Client `B` is a large company that makes hundreds of purchases per day. Values range from `$0.01` to `$1000.0`. `get(B)` will return average based on `N` last purchases.
